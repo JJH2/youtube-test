@@ -1,0 +1,256 @@
+/* 공통 */
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content-padding {
+  padding: 20px;
+}
+
+
+/* Main */
+
+#myVideo {
+  right: 0;
+  top: 10%;
+  min-width: 100%;
+  min-height: 80%;
+}
+
+.main-box {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  color: #f1f1f1;
+  padding: 50px 20px 20px 20px;
+}
+
+.main-box__question {
+  display: block;
+  top: 0;
+  font-size: 6rem;
+}
+
+.main-box__suggestion {
+  display: block;
+  margin-top: 10%;
+  font-size: 4rem;
+}
+
+.main-box__typed {
+  font-size: 4rem;
+}
+
+#myBtn {
+  bottom: 0;
+  margin: 50px auto auto auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: cornflowerblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/* Snow Game */
+
+.snow-game {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Google Map */
+
+.googleMap {
+  display: none;
+}
+
+#googleMap__map {
+  height: 500px;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#googleMap__map {
+  height: 500px;
+  width: 500px;
+}
+
+#googleMap__imgList {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+
+/* Modal-box */
+
+.modal-box {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+
+.modal-btns button,
+.modal-on {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.exit {
+  background: gray;
+}
+
+
+/* modal clicked */
+
+.active {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  animation: topDown 0.3s;
+}
+
+.active-off {
+  transform: translateY(-30%);
+  opacity: 0;
+  animation: downTop 0.3s;
+}
+
+@keyframes topDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+}
+
+.modal-bg {
+  background: black;
+  position: absolute;
+  opacity: 0.2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 1s;
+}
+
+
+/* youtube */
+
+.youtube {
+  display: none;
+  margin: 0 auto;
+  background: pink;
+}
+
+.youtube__title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.youtube-search {
+  text-align: center;
+}
+
+.content-search {
+  margin: 0 auto;
+}
+
+.content-padding>label>input {
+  font-size: 2em;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.content-padding>label>button {
+  font-size: 2em;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#player {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.search-container__list__item {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+  background: rgba(200, 200, 200, 0.3);
+}
+
+.search-container__list__item:hover {
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+
+.search-container__list__item>img {
+  vertical-align: middle;
+}
+
+.search-container__list__item>span {
+  margin-left: 20px;
+  opacity: 1;
+}
+
+
+/* Random */
+
+.show {
+  display: block;
+}
+
+.fade {
+  display: none;
+}
