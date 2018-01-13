@@ -39,7 +39,7 @@ function search() {
                 player.innerHTML = "";
                 const iframe = document.createElement('iframe');
                 iframe.classList.add('YT-iframe');
-                iframe.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe.src = `https://www.youtube.com/embed/${item.id.videoId}`
                 player.appendChild(iframe);
             })
             liEl.appendChild(imgEl);
